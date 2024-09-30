@@ -1,7 +1,7 @@
 import multer from "multer"
 
 const guardar = multer.diskStorage({
-    destination: (req, fiel, cb) => {
+    destination: (req, file, cb) => {
         cb(null, './public/uploads')
     },
     filename: (req, file, cb) => {
